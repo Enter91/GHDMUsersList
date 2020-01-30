@@ -41,6 +41,10 @@ class AvatarView: UIView {
         avatarImageView.kf.cancelDownloadTask()
     }
     
+    func resetImage() {
+        avatarImageView.image = nil
+    }
+    
     func setImage(with resource: Resource?) {
         avatarImageView.kf.setImage(with: resource)
     }

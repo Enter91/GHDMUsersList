@@ -29,7 +29,9 @@ class UsersListCell: UITableViewCell {
     }
     
     override func prepareForReuse() {
+        super.prepareForReuse()
         avatarView.cancelImageLoading()
+        avatarView.resetImage()
     }
 
     func setup(user: User) {
